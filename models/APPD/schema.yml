@@ -16,5 +16,7 @@ sources:
     database: EDW_TELMTRY_ETL_DB_DV1
     schema: WI
     tables:        
+      - name: RPUTTI_CSDF_TTM_PARAMETER_APPD_TE
+        description:  'TTM Parameter Table for APPD & THOUSANDEYES'
       - name: RPUTTI_CSDF_TTM_META_RULE_DEFN_APPD_TE
         description:  'TTM Rule Definition Table for APPD & THOUSANDEYES'

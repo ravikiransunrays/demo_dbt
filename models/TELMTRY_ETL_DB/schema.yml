@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: TELMTRY_ETL_DB_DV1
+    description: 'EDW_TELMTRY_ETL_DB_DV1'
+    database: EDW_TELMTRY_ETL_DB_DV1
+    schema: W
+    tables:
+      - name: CSDF_TTM_PARAMETER
+        description : 'TTM Parameter Table'
+      - name: CSDF_TTM_META_RULE_DEFN
+        description : 'TTM Rule Definition Table'

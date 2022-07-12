@@ -6,7 +6,6 @@ with source_csdf_ttm_meta_rule_defn as
 ),
 final as 
 (
-    select * from source_csdf_ttm_meta_rule_defn where THREADING_PRODUCT_NAME IN ('CST_APPD', 
-    'CST_THOUSANDEYES')
+    select * from source_csdf_ttm_meta_rule_defn where THREADING_PRODUCT_NAME IN ('CST_APPD', 'CST_THOUSANDEYES')
 )
 select * from final

@@ -1,8 +1,8 @@
 version: 2
 
 sources:
-  - name: TELMTRY_ETL_DB_DV1
-    description: 'EDW_TELMTRY_ETL_DB_DV1'
+  - name: TELMTRY_ETL_DB_W
+    description: 'EDW_TELMTRY_ETL_DB_DV1.W'
     database: EDW_TELMTRY_ETL_DB_DV1
     schema: W
     tables:
@@ -10,3 +10,11 @@ sources:
         description : 'TTM Parameter Table'
       - name: CSDF_TTM_META_RULE_DEFN
         description : 'TTM Rule Definition Table'
+  
+  - name: TELMTRY_ETL_DB_WI
+    description: 'EDW_TELMTRY_ETL_DB_DV1.WI'
+    database: EDW_TELMTRY_ETL_DB_DV1
+    schema: WI
+    tables:        
+      - name: RPUTTI_CSDF_TTM_META_RULE_DEFN_APPD_TE
+        description:  'TTM Rule Definition Table for APPD & THOUSANDEYES'

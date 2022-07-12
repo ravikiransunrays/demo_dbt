@@ -3,4 +3,4 @@
 
 select *
 from {{ ref('rputti_my_first_dbt_model') }}
---where eid <> null
+where eid is not null

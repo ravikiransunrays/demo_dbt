@@ -21,9 +21,14 @@ sources:
       - name: RPUTTI_CSDF_TTM_META_RULE_DEFN_APPD_TE
         description:  'TTM Rule Definition Table for APPD & THOUSANDEYES'
 
-# models:
-#   - name: RPUTTI_CSDF_TTM_PARAMETER_APPD_TE
-#     description:  'TTM Parameter Table for APPD & THOUSANDEYES'	
-    
-#   - name: RPUTTI_CSDF_TTM_META_RULE_DEFN_APPD_TE
-#     description:  'TTM Rule Definition Table for APPD & THOUSANDEYES'
+models:
+  - name: RPUTTI_CSDF_TTM_META_RULE_DEFN_APPD
+    description:  'TTM Rule Definition Table for APPD'
+    columns:
+      - name: THREADING_RULE_ID
+        tests:
+          - unique
+          - not_null
+      - name: THREADING_RULE_NAME
+        tests:
+          - not_null

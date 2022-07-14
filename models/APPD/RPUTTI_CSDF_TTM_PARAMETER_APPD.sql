@@ -1,4 +1,4 @@
-{{ config(materialized='table') }}
+{{ config(materialized='table', schema='W') }}
 
 with source_csdf_ttm_parameter as 
 (

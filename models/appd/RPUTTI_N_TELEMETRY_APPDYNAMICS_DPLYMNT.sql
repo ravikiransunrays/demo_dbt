@@ -1,3 +1,9 @@
+/*
+Informatica Job Group Name : EDW_CX_TELE_APPD_HI
+Informatica Job Name : wf_SS2BR_N_TELEMETRY_APPDYNAMICS_DPLYMNT
+Target Table Name : RPUTTI_N_TELEMETRY_APPDYNAMICS_DPLYMNT
+*/
+
 {{ config(materialized='incremental', 
 tags='EDW_CX_TELE_APPD_HI',
 sql_header='USE WAREHOUSE EDW_I_TELMTRY_CDPTELE_WH;',

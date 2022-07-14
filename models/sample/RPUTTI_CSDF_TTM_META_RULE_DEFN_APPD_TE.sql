@@ -1,8 +1,8 @@
-{{ config(materialized='table') }}
+{{ config(materialized='table', schema='WI') }}
 
 with source_csdf_ttm_meta_rule_defn as 
 (
-    select * from {{ source('TELMTRY_ETL_DB_W', 'CSDF_TTM_META_RULE_DEFN') }}
+    select * from {{ source('EDW_TELMTRY_ETL_DB_W', 'CSDF_TTM_META_RULE_DEFN') }}
 ),
 final as 
 (

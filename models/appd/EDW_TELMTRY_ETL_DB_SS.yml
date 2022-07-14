@@ -1,0 +1,8 @@
+version: 2
+sources:
+  - name: EDW_TELMTRY_ETL_DB_SS
+    description: 'EDW_TELMTRY_ETL_DB_SS'
+    database: EDW_TELMTRY_ETL_DB_DV1
+    schema: SS
+    tables: 
+      - name: APPDYNAMICS_BASE

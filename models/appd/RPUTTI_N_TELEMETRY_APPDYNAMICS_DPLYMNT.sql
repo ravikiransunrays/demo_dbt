@@ -15,7 +15,7 @@ allow_data_type_changes=False
 {%- call statement('sqlstmt_output', fetch_result=True) -%}
     -- SELECT DISTINCT TO_CHAR(MAX(LAST_UPD_DATE),'MM/DD/YYYY HH24:MI:SS')	
 	-- FROM {{source('EDW_TELMTRY_ETL_DB_SS', 'APPDYNAMICS_BASE')}}
-	SELECT DISTINCT TO_CHAR(MAX(EDWSF_CREATE_DTM),'MM/DD/YYYY HH24:MI:SS')	
+	SELECT DISTINCT TO_CHAR(MAX(EDWSF_UPDATE_DTM),'MM/DD/YYYY HH24:MI:SS')	
 	FROM {{this}}
 {%- endcall -%}
 

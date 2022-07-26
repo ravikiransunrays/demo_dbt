@@ -41,5 +41,5 @@ models:
       +materialized: view
       +schema: W
     appd:
-      +materialized: view
-      +schema: W
+      +materialized: table
+      +schema: WI

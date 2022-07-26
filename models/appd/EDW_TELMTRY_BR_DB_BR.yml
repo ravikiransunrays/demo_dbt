@@ -1,0 +1,9 @@
+version: 2
+sources:
+  - name: EDW_TELMTRY_BR_DB_BR
+    description: 'EDW_TELMTRY_BR_DB_BR'
+    database: EDW_TELMTRY_BR_DB_DV1
+    schema: BR
+    tables: 
+      - name: N_TELEMETRY_APPDYNAMICS_DPLYMNT
+      - name: N_RT_CUST_PS_STEP_METRIC_DLY
